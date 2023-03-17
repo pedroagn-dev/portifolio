@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header {
+    background-color: #292929;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px;
+    transition: all 0.3s ease;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #292929;
+}
+
+nav a.active {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+/* Sobre */
+#sobre {
+    background-color: #f1f1f1;
+    padding: 100px 0;
+}
+
+#sobre h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#sobre p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Habilidades */
+#habilidades {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+#habilidades h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#habilidades ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#habilidades li {
+    text-align: center;
+    flex-basis: 18%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: all 0.3s ease-out;
+}
+
+#habilidades li:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+#habilidades li span {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+#habilidades li img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Projetos */
+#projetos {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#projetos h2 {
+    font-size: 36px;
+}
+
+#projetos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.github-card {
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px;
+}
+
+.github-card img {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    height: auto;
+    padding: 20px;
+}
+
+.github-card button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.github-card button:hover {
+    opacity: 0.8;
+}
+
+.github-card a {
+    text-decoration: none;
+}
+
+
+/*Contato*/
+
+#contato {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+#contato h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+#contato form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contato input,
+#contato textarea {
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+
+#contato input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contato input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+#contato textarea {
+    height: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    #contato form {
+        max-width: 80%;
+    }
+}
+
+#contato button[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#contato button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+#enviar-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#enviar-btn.loading {
+background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#enviarbtn.sent {
+    background-color: #4CAF50;
+    cursor: default;
+}
+
+#enviarbtn.loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border: 3px solid #fff;
+    border-top-color: #4CAF50;
+    animation: spin 1s ease-in-out infinite;
+}
+#contato textarea {
+    resize: none;
+}
+#contato textarea {
+    height: 50px;
+}
+
+@keyframes spin {
+    to {transform: rotate(360deg);}
+}
+
+
+#enviar-btn.loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border: 3px solid #fff;
+    border-top-color: #4CAF50;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {transform: rotate(360deg);}
+}
+
+/*DARK*/
+.dark-mode {
+    background-color: #292929;
+    color: #fff;
+}
+
+.dark-mode a {
+    color: #fff;
+}
+
+.dark-mode #sobre {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.dark-mode #habilidades {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.dark-mode #projetos {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.dark-mode #contato {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+.dark-mode li {
+    color: #000000;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.toggle-button i {
+    transition: color 0.3s ease;
+}
+
+.toggle-button .fa-moon {
+    color: #333;
+}
+
+.toggle-button .fa-sun {
+    color: #f1c40f;
+}
+
+.dark-mode {
+    background-color: #000000;
+    color: #fff;
+}
+
+.dark-mode #banner-content p{
+    color: #000000;
+}
+.dark-mode .chatbot span{
+    color: #000000;
+}
+
+.dark-mode .toggle-button .fa-moon {
+    color: #f1c40f;
+}
+
+.dark-mode .toggle-button .fa-sun {
+    color: #333;
+}
+
+.element-to-change {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+.dark-mode .element-to-change {
+    background-color: #333;
+}
+
+/*footer*/
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+/*ChatBot*/
+#banner {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 250px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    overflow: hidden;
+}
+
+#banner-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+#banner-content img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#banner-content p {
+    font-size: 14px;
+    margin: 0;
+}
+
+#banner-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#banner-close:hover {
+    color: #f00;
+}
