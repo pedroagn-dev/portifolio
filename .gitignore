@@ -1,0 +1,8 @@
+.env
+vendor
+*.lock
+*lock.json
+
+# code editors
+.idea
+.vscode
